@@ -1,0 +1,12 @@
+name: fn1.dsanchor.io
+namespace: ""
+runtime: quarkus
+image: quay.io/dsanchor/fn1:latest
+imageDigest: ""
+trigger: events
+builder: default
+builderMap:
+  default: quay.io/boson/faas-quarkus-jvm-builder
+  jvm: quay.io/boson/faas-quarkus-jvm-builder
+  native: quay.io/boson/faas-quarkus-native-builder
+envVars: {}
